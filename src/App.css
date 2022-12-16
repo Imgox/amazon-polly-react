@@ -1,38 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: #fff;
+  width: 100vw;
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  max-width: 700px !important;
+  background: white;
+  padding: 50px 50px !important;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-header {
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+.App h1 {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+}
+
+.form > * {
+  margin: 20px 0;
+}
+
+.form textarea {
+  width: 100%;
+  height: 200px !important;
+  resize: none;
+}
+
+.button + .button {
+  margin-left: 10px;
+}
+
+.selects-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
